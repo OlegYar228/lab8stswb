@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестова сторінка</title>
+    <!-- Підключення Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Підключення іконкового шрифту (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Верхня частина сторінки (навігація) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="/assets/logo.svg" width="150px" height="auto" alt=""></a>
+        <!-- Кнопка для висування навігації на малих екранах -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Навігаційне меню -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Головна</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Про нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакти</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Центральна частина сторінки -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Ліва колонка -->
+            <div class="col-md-3">
+                <!-- Випадний список -->
+                <select class="custom-select mb-2">
+                    <option selected>Виберіть опцію</option>
+                    <option value="1">Опція 1</option>
+                    <option value="2">Опція 2</option>
+                    <option value="3">Опція 3</option>
+                </select>
+                <!-- Іконки Font Awesome -->
+                <i class="fas fa-star"></i> <i class="fas fa-heart"></i> <i class="fas fa-check"></i>
+            </div>
+
+            <!-- Центральна колонка -->
+            <div class="col-md-9">
+                <!-- Заголовок сторінки -->
+                <h2>Ласкаво просимо на тестову сторінку</h2>
+                <!-- Форма з кнопкою -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Електронна пошта</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Ваш коментар</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Надіслати</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Нижня частина сторінки -->
+    <footer class="bg-dark text-light text-center py-3">
+        &copy; 2023 FoodDel. Усі права захищено.
+    </footer>
+
+    <!-- Підключення Bootstrap JS та Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
